@@ -1,35 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jack Wu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jack Wu</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f8f9fa;
+    color:#222;
+    max-width:950px;
+    margin:auto;
+    padding:40px 20px;
+    line-height:1.6;
+}
+
+h1{
+    font-size:48px;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    color:#666;
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+section{
+    background:white;
+    padding:28px;
+    margin-bottom:22px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+h2{
+    margin-top:0;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.project{
+    margin-bottom:22px;
+}
+
+.project:last-child{
+    margin-bottom:0;
+}
+
+.project-title{
+    font-weight:bold;
+    font-size:18px;
+}
+
+small{
+    color:#666;
+}
+
+a{
+    color:#0056b3;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+</style>
 </head>
+
 <body>
-  <h1>Jack Wu</h1>
-  <p>Data Science and Mathematics student at New York University.</p>
 
-  <h2>Research Interests</h2>
-  <p>
-    I am interested in machine learning methods, predictive modeling, and data-driven systems,
-    especially how models can learn from real-world data and generalize to new settings.
-  </p>
+<h1>Jack Wu</h1>
+<div class="subtitle">
+NYU Data Science and Mathematics Student
+</div>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Music Genre Classification:</strong> Built a machine learning pipeline using preprocessing, PCA, KMeans clustering, Gradient Boosting, and ROC/AUC evaluation.</li>
-    <li><strong>Diabetes Prediction:</strong> Compared logistic regression, linear SVM, decision tree, and random forest models using ROC AUC and feature importance analysis.</li>
-  </ul>
+<section>
+<h2>About Me</h2>
+<p>
+I am an undergraduate student at New York University studying Data Science and Mathematics. 
+My interests are in machine learning, predictive modeling, and data-driven systems, especially how models learn from real-world data and generalize to new settings. 
+I also enjoy building clean and practical software systems that turn ideas into usable tools.
+</p>
+</section>
 
-  <h2>Skills</h2>
-  <p>Python, Java, SQL, pandas, numpy, scikit-learn, matplotlib</p>
+<section>
+<h2>Selected Machine Learning Projects</h2>
 
-  <h2>Coursework</h2>
-  <p>
-    Principles of Data Science I & II, Data Structures, Calculus, Linear Algebra,
-    Discrete Mathematics, Theory of Probability, Analysis, Data Management and Analysis.
-  </p>
+<div class="project">
+<div class="project-title">Music Genre Classification</div>
+<small>Python, pandas, scikit-learn, PCA, KMeans, Gradient Boosting</small>
+<p>
+Built an end-to-end multiclass classification pipeline using a dataset of 50,000 Spotify songs. 
+Designed a leakage-free workflow with preprocessing, PCA, clustering-derived features, and Gradient Boosting. 
+Achieved a final macro one-vs-rest AUC of 0.9341 and evaluated model behavior through ROC curves and feature importance analysis.
+</p>
+</div>
 
-  <h2>Contact</h2>
-  <p>Email: jw8779@nyu.edu</p>
+<div class="project">
+<div class="project-title">Diabetes Prediction Model Comparison</div>
+<small>Python, scikit-learn</small>
+<p>
+Compared Logistic Regression, Linear SVM, Decision Tree, and Random Forest models on a real health dataset. 
+Used ROC AUC as the primary metric and analyzed feature importance through drop-one-feature testing. 
+Observed how model performance depends on data structure rather than model complexity alone.
+</p>
+</div>
+
+</section>
+
+<section>
+<h2>Programming Projects</h2>
+
+<div class="project">
+<div class="project-title">Course Registration System</div>
+<small>Java, OOP, CSV, Serialization</small>
+<p>
+Developed a Java-based registration platform supporting separate student and administrator workflows. 
+Implemented authentication, course search, enrollment, withdrawal, course creation, and persistent storage. 
+Designed modular classes and interfaces to improve maintainability and future expansion.
+</p>
+</div>
+
+</section>
+
+<section>
+<h2>Technical Skills</h2>
+<p>
+<strong>Languages:</strong> Python, Java, SQL<br>
+<strong>Libraries:</strong> pandas, NumPy, scikit-learn, matplotlib<br>
+<strong>Tools:</strong> SQLite, MongoDB, Jupyter Notebook, VS Code
+</p>
+</section>
+
+<section>
+<h2>Relevant Coursework</h2>
+<p>
+Principles of Data Science I & II, Data Structures, Calculus I–III, Linear Algebra, Discrete Mathematics, Theory of Probability, Analysis, Data Management and Analysis
+</p>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>
+Email: jw8779@nyu.edu
+</p>
+</section>
+
 </body>
 </html>
